@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+button{
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  outline: none;
+}
+form button {
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #ff6f47;
+  color: white;
+}
+
+.todo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-list{
+  list-style: none;
+  min-width: 20%;
+  color: black;
+}
+.todo li {
+  flex: 1;
+}
+.todo-item{
+  padding: 10px;
+}
+.todo{
+  background: white;
+  margin: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s all ease ;
+}
+
+.complete-btn{
+  color: white;
+  background:rgb(0, 197, 0);
+  padding: 1rem;
+  font-size: 1rem;
+}
+.trash-btn{
+  color: white;
+  background:#ff6f47;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.fa-check,.fa-trash{
+  pointer-events: none;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.fall{
+  transform: rotate(35deg)
+  translateY(8rem)translateX(-50px);
+  opacity: 0;
+}
+ul{
+  transition: 0.5s all ease;
+}
+select{
+  appearance: none;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  
+}
+select{
+  color: orange;
+  width: 10.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.select::after{
+  content: "\25bc";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: orange;
+  padding: 1rem;
+  pointer-events: none;
+}
+option{
+  pointer-events: none;
+}
